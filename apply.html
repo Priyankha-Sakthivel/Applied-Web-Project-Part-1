@@ -32,7 +32,7 @@ Contribution note for individual assessment:
 
     <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
          <p>
-            <label for="jobRef">Job Reference Number</label>
+            <label for="jobRef">Job Reference Number *</label>
             <input type="text" id="jobRef" name="jobRef" pattern="[A-Za-z0-9]{6}" required title="Please enter a valid job reference number">
         </p>
 
@@ -40,24 +40,24 @@ Contribution note for individual assessment:
             <legend>Personal Information</legend>
        
             <p>
-                <label for="firstName">First Name</label>
+                <label for="firstName">First Name *</label>
                 <input type="text" id="firstName" name="firstName" pattern="[A-Za-z]{1,20}" title="Please enter a valid first name" required>
             </p>
 
             <p>
-                <label for="lastName">Last Name</label>
+                <label for="lastName">Last Name *</label>
                 <input type="text" id="lastName" name="lastName" pattern="[A-Za-z]{1,20}" title="Please enter a valid last name" required>
             </p>
 
             <p>
-                <label for="dob">Date of Birth</label>
+                <label for="dob">Date of Birth *</label>
                 <input type="text" id="dob" name="dob" placeholder="dd/mm/yyyy" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" title="Please enter a valid date of birth" required>
             </p>
             <p>
         </fieldset>
 
         <fieldset>
-            <legend>Gender</legend>
+            <legend>Gender *</legend>
             <p>
                 <label for="gender1">Male</label>
                 <input type="radio" id="gender1" name="gender" required>
@@ -76,7 +76,7 @@ Contribution note for individual assessment:
         <fieldset>
             <legend>Address</legend>
             <p>
-            <label for="streetAddress">Street Address</label>
+            <label for="streetAddress">Street Address *</label>
             <input type="text" id="streetAddress" name="streetAddress" pattern="[A-Za-z0-9]{2,40}" title="Please enter a valid street address" required>
             </p>
         </fieldset>
