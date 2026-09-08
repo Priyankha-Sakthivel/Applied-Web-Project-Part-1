@@ -25,3 +25,36 @@
     border: 1px solid #b8c7d1;
     border-radius: 8px;
 }
+
+
+.jobs-page header {
+    background-color: #14324a;
+    color: white;
+    padding: 20px;
+}
+
+.jobs-page header img {
+    width: 90px;
+    height: auto;
+}
+
+.jobs-page nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.jobs-page nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.jobs-page nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.jobs-page nav a:hover {
+    text-decoration: underline;
+}
