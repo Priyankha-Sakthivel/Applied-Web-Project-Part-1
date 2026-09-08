@@ -1,9 +1,9 @@
-main {
+.jobs-page main {
     width: 90%;
     margin: 30px auto;
 }
 
-section {
+.jobs-page section {
     width: 68%;
     background-color: white;
     padding: 20px;
@@ -12,11 +12,11 @@ section {
     border-radius: 8px;
 }
 
-section h2 {
+.jobs-page section h2 {
     color: #14324a;
 }
 
-aside {
+.jobs-page aside {
     width: 24%;
     float: right;
     background-color: #eaf2f7;
