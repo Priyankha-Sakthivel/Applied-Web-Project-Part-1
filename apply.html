@@ -31,10 +31,13 @@ Contribution note for individual assessment:
         <p><strong>All fields marked with an asterisk (*) are required.</strong></p>
 
     <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
-         <p>
-            <label for="jobRef">Job Reference Number *</label>
-            <input type="text" id="jobRef" name="jobRef" pattern="[A-Za-z0-9]{6}" required title="Please enter a valid job reference number">
-        </p>
+        <fieldset>
+            <legend>Job Reference</legend>
+            <p>
+                <label for="jobRef">Job Reference Number *</label>
+                <input type="text" id="jobRef" name="jobRef" pattern="[A-Za-z0-9]{6}" required title="Must be exactly 6 letters and/or numbers, e.g. AB1234">
+            </p>
+        </fieldset>
 
         <fieldset>
             <legend>Personal Information</legend>
