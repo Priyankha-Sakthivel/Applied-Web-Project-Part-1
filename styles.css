@@ -1,0 +1,27 @@
+main {
+    width: 90%;
+    margin: 30px auto;
+}
+
+section {
+    width: 68%;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #d6dde3;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #14324a;
+}
+
+aside {
+    width: 24%;
+    float: right;
+    background-color: #eaf2f7;
+    padding: 20px;
+    margin: 0 0 20px 20px;
+    border: 1px solid #b8c7d1;
+    border-radius: 8px;
+}
