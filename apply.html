@@ -30,11 +30,14 @@ Contribution note for individual assessment:
         <p>Please fill out the form below to apply for a position via our company.</p>
         <p><strong>All fields marked with an asterisk (*) are required.</strong></p>
 
-    <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
-         <p>
-            <label for="jobRef">Job Reference Number *</label>
-            <input type="text" id="jobRef" name="jobRef" pattern="[A-Za-z0-9]{6}" required title="Please enter a valid job reference number">
-        </p>
+    <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+        <fieldset>
+            <legend>Job Reference</legend>
+            <p>
+                <label for="jobRef">Job Reference Number *</label>
+                <input type="text" id="jobRef" name="jobRef" pattern="[A-Za-z0-9]{6}" required title="Must be exactly 6 letters and/or numbers, e.g. AB1234">
+            </p>
+        </fieldset>
 
         <fieldset>
             <legend>Personal Information</legend>
@@ -63,7 +66,7 @@ Contribution note for individual assessment:
                 <label for="phoneNum">Phone Number *</label>
                 <input type="text" id="phoneNum" name="phoneNum" pattern="[0-9]{8,12}" maxlength="12" title="Please enter your phone number" required>
             </p>
-            <p>
+
         </fieldset>
 
         <fieldset>
@@ -87,7 +90,7 @@ Contribution note for individual assessment:
             <legend>Address</legend>
             <p>
             <label for="streetAddress">Street Address *</label>
-            <input type="text" id="streetAddress" name="streetAddress" pattern="[A-Za-z0-9]{2,40}" title="Please enter a valid street address" required>
+            <input type="text" id="streetAddress" name="streetAddress" pattern="[A-Za-z0-9\s.,#'-]{2,40}" title="Please enter a valid street address" required>
             </p>
             <p>
               <label for="suburb">Suburb *</label>
