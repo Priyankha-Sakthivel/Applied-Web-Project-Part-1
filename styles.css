@@ -58,3 +58,20 @@
 .jobs-page nav a:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 800px) {
+    .jobs-page section {
+        width: 100%;
+    }
+
+    .jobs-page aside {
+        width: 100%;
+        float: none;
+        margin: 0 0 20px 0;
+    }
+
+    .jobs-page nav ul li {
+        display: block;
+        margin-bottom: 8px;
+    }
+}
