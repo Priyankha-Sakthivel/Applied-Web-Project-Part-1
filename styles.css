@@ -76,3 +76,13 @@
         margin-bottom: 8px;
     }
 }
+/* Formatting for apply.html */
+.apply-page header {
+    background-color: #14324a;
+    color: white;
+    padding: 20px;
+}
+
+.apply-page footer {
+    text-align: center;
+}
