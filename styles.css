@@ -85,4 +85,26 @@
 
 .apply-page footer {
     text-align: center;
+}   
+
+.apply-page nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
+
+.apply-page nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.apply-page nav a:hover {
+    text-decoration: underline;
+}
+
+.apply-page nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
