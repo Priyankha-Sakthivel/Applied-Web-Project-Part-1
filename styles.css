@@ -1,4 +1,6 @@
+/* ===== START OF THOMAS - JOBS PAGE CSS ===== */
 /* GenAI assistance was used to support CSS explanation, debugging and refinement. */
+
 .jobs-page main {
     width: 90%;
     margin: 30px auto;
@@ -26,7 +28,6 @@
     border: 1px solid #b8c7d1;
     border-radius: 8px;
 }
-
 
 .jobs-page header {
     background-color: #14324a;
@@ -60,7 +61,12 @@
     text-decoration: underline;
 }
 
+.jobs-page footer {
+    text-align: center;
+}
+
 @media screen and (max-width: 800px) {
+
     .jobs-page section {
         width: 100%;
     }
@@ -71,11 +77,22 @@
         margin: 0 0 20px 0;
     }
 
+    .jobs-page nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 8px 20px;
+    }
+
     .jobs-page nav ul li {
         display: block;
-        margin-bottom: 8px;
+        margin-right: 0;
+        margin-bottom: 0;
     }
 }
+
+/* ===== END OF THOMAS - JOBS PAGE CSS ===== */
+
+
 /* Formatting for apply.html */
 .apply-page header {
     background-color: #14324a;
