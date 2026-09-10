@@ -1,4 +1,6 @@
+/* ===== START OF THOMAS - JOBS PAGE CSS ===== */
 /* GenAI assistance was used to support CSS explanation, debugging and refinement. */
+
 .jobs-page main {
     width: 90%;
     margin: 30px auto;
@@ -26,7 +28,6 @@
     border: 1px solid #b8c7d1;
     border-radius: 8px;
 }
-
 
 .jobs-page header {
     background-color: #14324a;
@@ -60,7 +61,12 @@
     text-decoration: underline;
 }
 
+.jobs-page footer {
+    text-align: center;
+}
+
 @media screen and (max-width: 800px) {
+
     .jobs-page section {
         width: 100%;
     }
@@ -71,11 +77,22 @@
         margin: 0 0 20px 0;
     }
 
+    .jobs-page nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 8px 20px;
+    }
+
     .jobs-page nav ul li {
         display: block;
-        margin-bottom: 8px;
+        margin-right: 0;
+        margin-bottom: 0;
     }
 }
+
+/* ===== END OF THOMAS - JOBS PAGE CSS ===== */
+
+
 /* Formatting for apply.html */
 .apply-page header {
     background-color: #14324a;
@@ -132,6 +149,204 @@
     display:flex;
     gap: 30px;
     margin-top: 25px;
+}
+
+/*Home page: page background*/
+
+.home-page {
+  background-color: #eef1f4;
+  background-image:
+    linear-gradient(#14324a, #14324a),
+    linear-gradient(#14324a, #14324a);
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+  background-size: 300px 100%, 300px 100%;
+}
+
+/*Home Page: header and nav*/
+
+.home-page header {
+    background-color: #14324a;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-page header img {
+    width: 100px;
+    height: auto;
+}
+
+.home-page nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.home-page nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-page nav a:hover {
+    text-decoration: underline;
+}
+
+.home-page .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*Homepage: Hero*/
+
+.home-page .hero {
+  background: linear-gradient(135deg, #14324a 0%, #1f4b6d 60%, #2f6690 100%);
+  color: white;
+  padding: 60px 40px;
+}
+
+.home-page .hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.home-page .hero p {
+  max-width: 600px;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+/*Homepage: button*/
+
+.btn {
+  display: inline-block;
+  background-color: #f2a71b;
+  color: #14324a;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 28px;
+  border-radius: 999px;
+}
+
+.btn:hover {
+  background-color: #d8930f;
+}
+
+/* Home page: employers*/
+
+.home-page .employers {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 40px;
+  text-align: center;
+  background-color: white;
+  border: 4px solid #14324a;
+  border-radius: 8px;
+}
+
+.home-page .employers h2 {
+  color: #14324a;
+  margin-bottom: 20px;
+}
+
+.home-page .employers img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Home page: offices table*/
+.home-page .offices {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  padding: 40px;
+  background-color: white;
+  border: 4px solid #14324a;
+  border-radius: 8px;
+}
+
+.home-page .offices h2 {
+  color: #14324a;
+  margin-bottom: 20px;
+}
+
+.home-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.home-page caption {
+  font-weight: bold;
+  color: #14324a;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.home-page th,
+.home-page td {
+  text-align: left;
+  padding: 10px 15px;
+  border: 1px solid #d6dde3;
+}
+
+.home-page th[colspan="3"] {
+  background-color: #14324a;
+  color: white;
+}
+
+/*Home page: acknowledgement*/
+
+.home-page .acknowledgement {
+  background-color: white;
+  border: 4px solid #14324a;
+  border-radius: 8px;
+  padding: 30px 40px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.home-page .acknowledgement h2 {
+  color: #14324a;
+  margin-bottom: 15px;
+}
+
+.home-page .acknowledgement p {
+  margin-bottom: 15px;
+}
+
+.home-page .acknowledgement p:last-child {
+  margin-bottom: 0;
+}
+
+/*Home page: footer*/
+
+.home-page footer {
+  background-color: #14324a;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+.home-page footer a {
+  color: white;
+}
+
+.home-page footer p {
+  margin-bottom: 8px;
+}
+
+.home-page footer p:last-child {
+  margin-bottom: 0;
 }
 
 /* Formatting for about.html */
