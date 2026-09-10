@@ -108,3 +108,23 @@
     margin: 15px 0;
 }
 
+.apply-page main {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.apply-page legend {
+    color:#14324a;
+    font-weight: bold;
+}
+
+.apply-page header img {
+    width: 90px;
+    height: auto;
+}
+
+.apply-page h1 {
+    margin-bottom: 10px
+
+}
+
