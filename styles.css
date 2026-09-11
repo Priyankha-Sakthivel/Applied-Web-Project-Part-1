@@ -1,4 +1,16 @@
 /* ===== START OF GLOBAL CSS ===== */
+/* Shared: base page background and full-viewport body so backgrounds paint edge to edge */
+/* GenAI (Claude) was used to suggest the base html/body rules below, which fix a
+   background rendering strip on the home page and remove the default body margin
+   that was exposing the browser's default background colour. */
+html {
+    background-color: #eef1f4;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
 /* Shared across all pages: visible focus outline for keyboard users */
 a:focus, button:focus, input:focus, select:focus, textarea:focus {
     outline: 2px solid #f2a71b;
@@ -17,6 +29,7 @@ body {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+/* ===== END OF GLOBAL CSS ===== */
 
 
 /* ===== START OF THOMAS - JOBS PAGE CSS ===== */
