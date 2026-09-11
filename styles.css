@@ -110,18 +110,6 @@ body {
         float: none;
         margin: 0 0 20px 0;
     }
-
-    .jobs-page nav ul {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        gap: 8px 20px;
-    }
-
-    .jobs-page nav ul li {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 0;
-    }
 }
 
 /* ===== END OF THOMAS - JOBS PAGE CSS ===== */
@@ -574,11 +562,6 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-    .about-page nav li {
-        display: block;
-        margin-bottom: 8px;
-    }
-
     .about-page table {
         display: block;
         overflow-x: auto;
