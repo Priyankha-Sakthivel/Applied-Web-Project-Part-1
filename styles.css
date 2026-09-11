@@ -1,3 +1,9 @@
+/* ===== START OF GLOBAL CSS ===== */
+/* Shared across all pages: visible focus otuline for keyboard users */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 2px solid #f2a71b;
+    outline-offset: 2px;
+}
 /* ===== START OF THOMAS - JOBS PAGE CSS ===== */
 /* GenAI assistance was used to support CSS explanation, debugging and refinement. */
 
