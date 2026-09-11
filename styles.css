@@ -1,3 +1,24 @@
+/* ===== START OF GLOBAL CSS ===== */
+/* Shared across all pages: visible focus outline for keyboard users */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 2px solid #f2a71b;
+    outline-offset: 2px;
+}
+/* Shared: highlight whichever nav link matches the current page */
+nav a.active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+/* Shared: gentle fade-in so navigating between pages feels smoother */
+body {
+    animation: fadeIn 0.35s ease-in;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
 /* ===== START OF THOMAS - JOBS PAGE CSS ===== */
 /* GenAI assistance was used to support CSS explanation, debugging and refinement. */
 
@@ -93,7 +114,7 @@
 /* ===== END OF THOMAS - JOBS PAGE CSS ===== */
 
 
-/* Formatting for apply.html */
+/* ===== START OF KEVIN - APPLY PAGE CSS =====  */
 .apply-page header {
     background-color: #14324a;
     color: white;
@@ -150,9 +171,49 @@
     gap: 30px;
     margin-top: 25px;
 }
+/* ===== END OF KEVIN - APPLY PAGE CSS ===== */
+/* ===== START OF PRIYANKHA - APPLY PAGE CSS ===== */
+/* GenAI assistance was used to develop grid layout and responsive form styling below. */
+.apply-page fieldset {
+    border: 1px solid #d6dde3;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
 
-/*Home page: page background*/
+.apply-page fieldset p {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
 
+.apply-page input[type="text"],
+.apply-page input[type="email"],
+.apply-page select,
+.apply-page textarea {
+    padding: 8px 10px;
+    border: 1px solid #b8c7d1;
+    border-radius: 6px;
+    font: inherit;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* Gender and Skills rows have multiple label/input pairs per <p>,so they shouldn't use the 2-column grid meant for single fields */
+.apply-page fieldset legend + p {
+    display: block;
+}
+/* Responsive: stack label above input on small screens */
+@media screen and (max-width: 600px) {
+    .apply-page fieldset p {
+        grid-template-columns: 1fr;
+    }
+}
+/* ===== END OF PRIYANKHA - APPLY PAGE CSS ===== */
+
+
+/* ===== START OF DIMITRI - HOME PAGE CSS ===== */
 .home-page {
   background-color: #eef1f4;
   background-image:
@@ -348,8 +409,10 @@
 .home-page footer p:last-child {
   margin-bottom: 0;
 }
+/* ===== END OF DIMITRI - HOME PAGE CSS ===== */
 
-/* Formatting for about.html */
+
+/* ===== START OF MARK - ABOUT PAGE CSS ===== */
 .about-page {
     color: #243746;
     background-color: #f4f7f9;
@@ -493,4 +556,4 @@
         overflow-x: auto;
     }
 }
-
+/* ===== END OF MARK - ABOUT PAGE CSS ===== */
