@@ -422,6 +422,21 @@ body {
 .home-page footer p:last-child {
   margin-bottom: 0;
 }
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 700px) {
+    .home-page {
+        background-size: 60px 100%, 60px 100%;
+    }
+    .home-page header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .home-page nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 /* ===== END OF DIMITRI - HOME PAGE CSS ===== */
 
 
